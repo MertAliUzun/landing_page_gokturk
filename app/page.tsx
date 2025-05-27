@@ -10,12 +10,12 @@ export default function LandingPage() {
       {/* Header */}
       <header className="bg-gray-900/80 backdrop-blur-md border-b border-gray-700 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">GT</span>
-            </div>
-            <span className="text-xl font-bold text-white">GökTürk</span>
-          </div>
+          <Image
+          src="/logo.png" // public klasöründe logo.png varsa
+          alt="Ana Sayfa"
+          width={50}
+          height={50}
+        />
           <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-4 sm:px-6 py-2 rounded-lg font-medium shadow-lg text-sm sm:text-base">
             Başlayın
           </Button>
@@ -39,7 +39,7 @@ export default function LandingPage() {
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
               GökTürk:
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent block">
-                Çevir ve Öğren
+                Öğren ve Çevir
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
