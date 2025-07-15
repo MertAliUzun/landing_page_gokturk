@@ -30,8 +30,8 @@ export default function LandingPage() {
             <Image
               src="/gokturk_1.png?height=600&width=400"
               alt="GökTürk App Screenshot"
-              width={400}
-              height={600}
+              width={300}
+              height={400}
               className="relative mx-auto rounded-3xl shadow-2xl border border-gray-700"
             />
           </div>
@@ -80,31 +80,35 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
+          <div className="flex justify-center">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-2xl"></div>
             <Image
               src="/gokturk_2.png?height=400&width=500"
               alt="Çeviri Özelliği"
-              width={500}
-              height={400}
+              width={300}
+              height={250}
               className="relative rounded-2xl shadow-2xl border border-gray-700"
             />
           </div>
+        </div>
         </div>
       </section>
 
       {/* Feature 2 */}
       <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center">
           <div className="relative lg:order-1">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-2xl"></div>
             <Image
               src="/gokturk_3.png?height=600&width=400"
               alt="Öğrenme Modülleri"
-              width={500}
-              height={400}
+              width={300}
+              height={250}
               className="relative rounded-2xl shadow-2xl border border-gray-700"
             />
+          </div>
           </div>
           <div className="relative group lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
@@ -154,31 +158,35 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
+          <div className="flex justify-center">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-2xl blur-2xl"></div>
             <Image
               src="/gokturk_4.png?height=600&width=400"
               alt="Tarihî Metinler"
-              width={500}
-              height={400}
+              width={300}
+              height={250}
               className="relative rounded-2xl shadow-2xl border border-gray-700"
             />
           </div>
+        </div>
         </div>
       </section>
 
       {/* Feature 4 */}
       <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center">
           <div className="relative lg:order-1">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-2xl blur-2xl"></div>
             <Image
               src="/gokturk_5.png?height=600&width=400"
               alt="Pratik Egzersizler"
-              width={500}
-              height={400}
+              width={300}
+              height={250}
               className="relative rounded-2xl shadow-2xl border border-gray-700"
             />
+          </div>
           </div>
           <div className="relative group lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
@@ -228,16 +236,18 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
-          <div className="relative">
+          <div className="flex justify-center">
+          <div className="relative ">
             <div className="absolute inset-0 bg-gradient-to-r from-rose-500/20 to-red-500/20 rounded-2xl blur-2xl"></div>
             <Image
               src="/gokturk_6.png?height=600&width=400"
               alt="İlerleme Takibi"
-              width={500}
-              height={400}
+              width={300}
+              height={250}
               className="relative rounded-2xl shadow-2xl border border-gray-700"
             />
           </div>
+        </div>
         </div>
       </section>
 
