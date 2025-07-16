@@ -47,10 +47,17 @@ export default function LandingPage() {
               kültürünün kökenlerine yolculuk yapın.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-medium text-base sm:text-lg flex items-center gap-2 sm:gap-3 border border-gray-600 shadow-xl">
-                <Play className="w-5 h-5 sm:w-6 sm:h-6" />
-                Google Play'den İndirin
-              </Button>
+            <a
+  href="https://play.google.com/store/apps/details?id=com.mau.gokturk"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-medium text-base sm:text-lg flex items-center gap-2 sm:gap-3 border border-gray-600 shadow-xl">
+    <Play className="w-5 h-5 sm:w-6 sm:h-6" />
+    Google Play'den İndirin
+  </Button>
+</a>
+
             </div>
           </div>
         </div>
