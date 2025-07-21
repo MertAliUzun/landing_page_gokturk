@@ -31,16 +31,6 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-3xl"></div>
-            <Image
-              src="/gokturk_1.png?height=600&width=400"
-              alt="GökTürk App Screenshot"
-              width={300}
-              height={400}
-              className="relative mx-auto rounded-3xl shadow-2xl border border-gray-700"
-            />
-          </div>
           <div className="space-y-6">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
               GökTürk:
@@ -64,6 +54,16 @@ export default function LandingPage() {
               </Button>
             </a>
             </div>
+          </div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-3xl"></div>
+            <Image
+              src="/gokturk_1.png?height=600&width=400"
+              alt="GökTürk App Screenshot"
+              width={300}
+              height={400}
+              className="relative mx-auto rounded-3xl shadow-2xl border border-gray-700"
+            />
           </div>
         </div>
       </section>
@@ -98,10 +98,10 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Türkçe'den Göktürkçeye çeviri yapıp yazdığınız metnin Göktürkçesini kopyalabilirsiniz. 
-                  Göktürkçe'den Türkçe'ye çeviri de AI entegrasyonu sayesinde desteklemektedir. 
-                  Alfabenin yapısından ötürü Göktürkçe'den Türkçeye çevrilirken birebir çeviri yapılamaz. 
-                  Ancak AI sayesinde %99 doğruluk oranıyla çeviri yapılabilir.
+                  • Türkçe'den Göktürkçeye çeviri yapıp yazdığınız metnin Göktürkçesini kopyalabilirsiniz.<br/>
+                  • Göktürkçe'den Türkçe'ye çeviri de AI entegrasyonu sayesinde desteklemektedir.<br/>
+                  • Alfabenin yapısından ötürü Göktürkçe'den Türkçeye çevrilirken birebir çeviri yapılamaz.<br/>
+                  • Ancak AI sayesinde %99 doğruluk oranıyla çeviri yapılabilir.
                 </p>
               </CardContent>
             </Card>
@@ -127,10 +127,9 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Göktürkçe alfabeyi ve kuralları inceleyerek öğrenmeye başlayabilirsiniz. 
-                  Daha sonra kendinizi test etmek için Türkçe-Göktürkçe ve Göktürkçe-Türkçe testlerini çözebilirsiniz. 
-                  Bu testlerde harf ve kelimeler sorularak bilginiz sınanır.
-
+                  • Göktürkçe alfabeyi ve kuralları inceleyerek öğrenmeye başlayabilirsiniz.<br/>
+                  • Daha sonra kendinizi test etmek için Türkçe-Göktürkçe ve Göktürkçe-Türkçe testlerini çözebilirsiniz.<br/>
+                  • Bu testlerde harf ve kelimeler sorularak bilginiz sınanır.
                 </p>
               </CardContent>
             </Card>
@@ -180,8 +179,8 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Sözlük sayfasından 10000 den fazla kelimeyi arayabilirsiniz. 
-                  Aramak için hem anlamlarını, hem kelimenin türkçesini hem de Göktürkçe harfler ile yazılan halini kullanarak arama yapabilirsiniz.
+                  • Sözlük sayfasından 10000 den fazla kelimeyi arayabilirsiniz.<br/>
+                  • Aramak için hem anlamlarını, hem kelimenin türkçesini hem de Göktürkçe harfler ile yazılan halini kullanarak arama yapabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -207,9 +206,9 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Göktürkçe atasözlerini bu sayfadan keşfedebilirsiniz. 
-                  Bu sayfaya her geldiğinizde 1000'in üzerinde atasözünden rasgele seçerek görmediğiniz atasözleri görebilirsiniz. 
-                  Ayrıca eğer bir atasözünü yanlışlıkla geçip tekrar bulmak isterseniz, uygulama aynı sayfada kaldığınız sürece bu veriyi hafızasında tutacağı için rahatlıkla bulabilirsiniz.
+                  • Göktürkçe atasözlerini bu sayfadan keşfedebilirsiniz.<br/>
+                  • Bu sayfaya her geldiğinizde 1000'in üzerinde atasözünden rasgele seçerek görmediğiniz atasözleri görebilirsiniz.<br/>
+                  • Ayrıca eğer bir atasözünü yanlışlıkla geçip tekrar bulmak isterseniz, uygulama aynı sayfada kaldığınız sürece bu veriyi hafızasında tutacağı için rahatlıkla bulabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -259,10 +258,10 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Bu sayfada Orhun yazıtlarını inceleyebilirsiniz. 
-                  Tonyukuk, Bilge Kağan ve Kül Tigin yazıtlarını okuyabilirsiniz. 
-                  Hem Göktürkçe, hem Göktürkçenin Latin alfabeyle yazımı hemde günümüz Türkçesi hallerini görebilirsiniz. 
-                  Ayrıca kaldığınız yerden devam edebilmek için "kitap ayracı" bırakabilirsiniz.
+                  • Bu sayfada Orhun yazıtlarını inceleyebilirsiniz.<br/>
+                  • Tonyukuk, Bilge Kağan ve Kül Tigin yazıtlarını okuyabilirsiniz.<br/>
+                  • Hem Göktürkçe, hem Göktürkçenin Latin alfabeyle yazımı hemde günümüz Türkçesi hallerini görebilirsiniz.<br/>
+                  • Ayrıca kaldığınız yerden devam edebilmek için "kitap ayracı" bırakabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -288,9 +287,9 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Gördüğünüz gibi 4 şıklı bir sınav sistemi vardır. 
-                  Burada Göktürkçe harfler veya kelimeler verilerek Türkçe karşılıkları sorulabilir. 
-                  Ayrıca Türkçe harfler veya kelimeler verilerek Göktürkçe karşılıkları da sorulabilir.
+                  • Gördüğünüz gibi 4 şıklı bir sınav sistemi vardır.<br/>
+                  • Burada Göktürkçe harfler veya kelimeler verilerek Türkçe karşılıkları sorulabilir.<br/>
+                  • Ayrıca Türkçe harfler veya kelimeler verilerek Göktürkçe karşılıkları da sorulabilir.
                 </p>
               </CardContent>
             </Card>
