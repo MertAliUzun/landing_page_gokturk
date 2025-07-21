@@ -68,6 +68,47 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Feature 0 */}
+      <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center">
+          <div className="relative lg:order-1">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-2xl"></div>
+            <Image
+              src="/gokturk_1.png?height=600&width=400"
+              alt="Göktürkçe Çeviri"
+              width={300}
+              height={250}
+              className="relative rounded-2xl shadow-2xl border border-gray-700"
+            />
+          </div>
+          </div>
+          <div className="relative group lg:order-2">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+            <Card className="relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm border border-gray-700/50 shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Türkçe - Göktürkçe Çeviri</h3>
+                    <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                  </div>
+                </div>
+                <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+                  Türkçe'den Göktürkçeye çeviri yapıp yazdığınız metnin Göktürkçesini kopyalabilirsiniz. 
+                  Göktürkçe'den Türkçe'ye çeviri de AI entegrasyonu sayesinde desteklemektedir. 
+                  Alfabenin yapısından ötürü Göktürkçe'den Türkçeye çevrilirken birebir çeviri yapılamaz. 
+                  Ancak AI sayesinde %99 doğruluk oranıyla çeviri yapılabilir.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Feature 1 */}
       <section className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -78,16 +119,18 @@ export default function LandingPage() {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                    <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Anında Çeviri</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Pratik ve Öğrenme</h3>
                     <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Modern Türkçe metinleri Göktürk alfabesine çevirin veya tam tersini yapın. Gelişmiş AI teknolojisi ile
-                  doğru ve hızlı çeviri deneyimi yaşayın.
+                  Göktürkçe alfabeyi ve kuralları inceleyerek öğrenmeye başlayabilirsiniz. 
+                  Daha sonra kendinizi test etmek için Türkçe-Göktürkçe ve Göktürkçe-Türkçe testlerini çözebilirsiniz. 
+                  Bu testlerde harf ve kelimeler sorularak bilginiz sınanır.
+
                 </p>
               </CardContent>
             </Card>
@@ -132,13 +175,13 @@ export default function LandingPage() {
                     <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">İnteraktif Öğrenme</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Sözlük Ekranı</h3>
                     <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Adım adım öğrenme modülleri ile Göktürk alfabesini kolayca öğrenin. Oyunlaştırılmış dersler ve pratik
-                  egzersizlerle bilginizi pekiştirin.
+                  Sözlük sayfasından 10000 den fazla kelimeyi arayabilirsiniz. 
+                  Aramak için hem anlamlarını, hem kelimenin türkçesini hem de Göktürkçe harfler ile yazılan halini kullanarak arama yapabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -156,16 +199,17 @@ export default function LandingPage() {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <History className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                    <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Tarihî Keşif</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Atasözleri Ekranı</h3>
                     <div className="w-12 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"></div>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Antik Göktürk yazıtlarını ve tarihî metinleri keşfedin. Orkhon yazıtları ve diğer önemli eserleri
-                  modern çevirilerle birlikte inceleyin.
+                  Göktürkçe atasözlerini bu sayfadan keşfedebilirsiniz. 
+                  Bu sayfaya her geldiğinizde 1000'in üzerinde atasözünden rasgele seçerek görmediğiniz atasözleri görebilirsiniz. 
+                  Ayrıca eğer bir atasözünü yanlışlıkla geçip tekrar bulmak isterseniz, uygulama aynı sayfada kaldığınız sürece bu veriyi hafızasında tutacağı için rahatlıkla bulabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -207,16 +251,18 @@ export default function LandingPage() {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <Target className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                    <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Pratik Egzersizler</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Orhun Yazıtları</h3>
                     <div className="w-12 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Çeşitli egzersizler ve mini oyunlarla öğrendiklerinizi pekiştirin. Harf tanıma, kelime oluşturma ve
-                  metin okuma alıştırmaları ile ustalaşın.
+                  Bu sayfada Orhun yazıtlarını inceleyebilirsiniz. 
+                  Tonyukuk, Bilge Kağan ve Kül Tigin yazıtlarını okuyabilirsiniz. 
+                  Hem Göktürkçe, hem Göktürkçenin Latin alfabeyle yazımı hemde günümüz Türkçesi hallerini görebilirsiniz. 
+                  Ayrıca kaldığınız yerden devam edebilmek için "kitap ayracı" bırakabilirsiniz.
                 </p>
               </CardContent>
             </Card>
@@ -234,16 +280,17 @@ export default function LandingPage() {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-rose-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                    <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">İlerleme Takibi</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Sınav Ekranı</h3>
                     <div className="w-12 h-1 bg-gradient-to-r from-rose-500 to-red-500 rounded-full"></div>
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Öğrenme sürecinizi detaylı istatistiklerle takip edin. Başarılarınızı görün, zayıf noktalarınızı
-                  belirleyin ve motivasyonunuzu yüksek tutun.
+                  Gördüğünüz gibi 4 şıklı bir sınav sistemi vardır. 
+                  Burada Göktürkçe harfler veya kelimeler verilerek Türkçe karşılıkları sorulabilir. 
+                  Ayrıca Türkçe harfler veya kelimeler verilerek Göktürkçe karşılıkları da sorulabilir.
                 </p>
               </CardContent>
             </Card>
